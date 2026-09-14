@@ -6,7 +6,7 @@
     <title>Уведомление о прибытии</title>
     <style>
         body {
-            font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: #f5f5f7;
             margin: 0;
             padding: 0;
@@ -61,7 +61,7 @@
         /* Строка преимущества (все в один ряд слева) */
         .feature-row-left {
             display: flex;
-            align-items: center; /* Центрируем большой кружок по высоте строки */
+            align-items: center;
             text-align: left;
         }
         
@@ -92,31 +92,10 @@
         /* Стиль для подчёркивания главных слов */
         .underline-title {
             font-weight: 700;
-            text-decoration: underline; /* Подчёркивание линией */
+            text-decoration: underline;
         }
 
-        /* Полоска цены */
-        .price-box {
-            text-align: center;
-            border: 1px solid #b3d4f7;
-            background-color: #fafcff;
-            margin-top: 16px;
-            margin-bottom: 16px;
-            padding: 18px;
-        }
-        .price-digits {
-            font-size: 26px;
-            font-weight: 800;
-            color: #0071e3;
-            margin-bottom: 4px;
-        }
-        .price-notes {
-            font-size: 14.5px;
-            font-weight: 700;
-            color: #000000;
-        }
-
-        /* Синяя кнопка действия */
+        /* Синяя кнопка действия в самом низу */
         .blue-button {
             display: block;
             width: 100%;
@@ -131,6 +110,7 @@
             text-decoration: none;
             box-sizing: border-box;
             box-shadow: 0 4px 12px rgba(0,113,227,0.15);
+            margin-top: 8px; /* Небольшой аккуратный отступ от последней карточки */
         }
         .blue-button:active {
             background: #005bb5;
@@ -171,12 +151,6 @@
             <a href="uvedomlenie.html" class="blue-dot-link" title="Заполнить бланк"></a>
             <div class="feature-text"><span class="underline-title">Для МФЦ и МВД!</span> Распечатай готовый файл.</div>
         </div>
-    </div>
-
-    <!-- Внутренний прямоугольник 5: Цена -->
-    <div class="inner-box price-box">
-        <div class="price-digits">199 рублей.</div>
-        <div class="price-notes">Оплата в конце! Без подписок!</div>
     </div>
 
     <!-- Синяя кнопка действия -->
