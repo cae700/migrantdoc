@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уведомление о прибытии</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Один большой внешний прямоугольник */
+        .main-container {
+            background: #ffffff;
+            border: 1px solid #d2d2d7; 
+            border-radius: 16px;
+            max-width: 460px;
+            width: 100%;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            box-sizing: border-box;
+        }
+        
+        /* Маленькие внутренние прямоугольники (полоски матраса) */
+        .inner-box {
+            background-color: #ffffff;
+            border: 1px solid #e5e5ea;
+            border-radius: 10px;
+            padding: 16px 16px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        /* Полоска 1: Заголовок бланка */
+        .title-box {
+            text-align: center;
+            background-color: #fafafa;
+        }
+        .main-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #000000;
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            font-size: 14.5px;
+            line-height: 1.4;
+            font-weight: 500;
+            color: #000000;
+        }
+
+        /* Строка преимущества (все в один ряд слева) */
+        .feature-row-left {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+        
+        /* Большие синие кружочки-ссылки */
+        .blue-dot-link {
+            display: block;
+            width: 18px;
+            height: 18px;
+            background-color: #0071e3;
+            border-radius: 50%;
+            margin-right: 14px;
+            flex-shrink: 0;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        .blue-dot-link:active {
+            transform: scale(0.9);
+            background-color: #005bb5;
+        }
+        
+        .feature-text {
+            font-size: 14.5px;
+            line-height: 1.4;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        /* Стиль для подчёркивания главных слов */
+        .underline-title {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        /* Выделение слова БЕСПЛАТНО */
+        .free-accent {
+            color: #0071e3;
+            font-weight: 800;
+        }
+
+        /* Синяя кнопка действия в самом низу */
+        .blue-button {
+            display: block;
+            width: 100%;
+            background: #0071e3;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-sizing: border-box;
+            box-shadow: 0 4px 12px rgba(0,113,227,0.15);
+            margin-top: 8px;
+        }
+        .blue-button:active {
+            background: #005bb5;
+        }
+    </style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for (var j=0;j<document.scripts.length;j++){if (document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112965374', 'ym');
+ym(112965374, 'init', {ssr:true, webvisor:false, clickmap:true, trackLinks:true, accurateTrackBounce:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112965374" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- Внутренний прямоугольник 1: Название бланка -->
+    <div class="inner-box title-box">
+        <div class="main-title">
+            Уведомление о прибытии иностранного гражданина или лица без гражданства в место пребывания
+        </div>
+        <div class="subtitle">Сделай на телефоне за 5 минут.</div>
+    </div>
+
+    <!-- Внутренний прямоугольник 2: Экономия -->
+    <div class="inner-box">
+        <div class="feature-row-left">
+            <a href="uvedomlenie.html" class="blue-dot-link" title="Заполнить бланк"></a>
+            <div class="feature-text"><span class="underline-title">Экономия!</span> Не нужно каждые три месяца делать новый бланк за 800р.</div>
+        </div>
+    </div>
+
+    <!-- Внутренний прямоугольник 3: В телефоне -->
+    <div class="inner-box">
+        <div class="feature-row-left">
+            <a href="uvedomlenie.html" class="blue-dot-link" title="Заполнить бланк"></a>
+            <div class="feature-text"><span class="underline-title">Теперь готовый бланк будет в телефоне!</span> Через 3 месяца можно бесплатно поменять даты и распечатать снова.</div>
+        </div>
+    </div>
+
+    <!-- Внутренний прямоугольник 4: МФЦ и МВД + БЕСПЛАТНО -->
+    <div class="inner-box">
+        <div class="feature-row-left">
+            <a href="uvedomlenie.html" class="blue-dot-link" title="Заполнить бланк"></a>
+            <div class="feature-text"><span class="underline-title">Для МФЦ и МВД!</span> Распечатай готовый файл. <span class="free-accent">БЕСПЛАТНО</span></div>
+        </div>
+    </div>
+
+    <!-- Синяя кнопка действия -->
+    <a href="uvedomlenie.html" class="blue-button">ЗАПОЛНИТЬ БЛАНК</a>
+
+</div>
+
+<script>
+// отметка "перешёл к заполнению бланка" для статистики
+document.addEventListener('click', function (ev) {
+  var a = ev.target.closest && ev.target.closest('a[href="uvedomlenie.html"]');
+  if (a && window.ym) { try { ym(112965374, 'reachGoal', 'start'); } catch (e) {} }
+});
+</script>
+</body>
+</html>
